@@ -1,4 +1,4 @@
-package problemdomain;
+package problemDomain;
 
 public abstract class Prism extends Shape 
 {

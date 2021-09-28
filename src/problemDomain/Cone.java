@@ -1,4 +1,4 @@
-package problemdomain;
+package problemDomain;
 
 public class Cone extends Shape 
 {

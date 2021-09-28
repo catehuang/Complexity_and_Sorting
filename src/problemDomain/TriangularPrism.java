@@ -1,13 +1,13 @@
-package problemdomain;
+package problemDomain;
 
-public class TrianglarPrism extends Prism 
+public class TriangularPrism extends Prism 
 {
-	public TrianglarPrism() 
+	public TriangularPrism() 
 	{
 		super();
 	}
 
-	public TrianglarPrism(double height, double side) 
+	public TriangularPrism(double height, double side) 
 	{
 		super(height, side);
 	}

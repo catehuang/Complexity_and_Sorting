@@ -1,4 +1,4 @@
-package problemdomain;
+package problemDomain;
 
 public abstract class Shape implements Comparable <Shape>
 {
@@ -41,7 +41,7 @@ public abstract class Shape implements Comparable <Shape>
 			return 0;
 		}
 	}
-	
+
 	public abstract double calcBaseArea();
 	public abstract double calcVolume(); 
 }

@@ -2,7 +2,7 @@ package utilities;
 
 import java.util.Comparator;
 
-import problemdomain.Shape;
+import problemDomain.Shape;
 
 public class BaseAreaCompare implements Comparator <Shape> 
 {

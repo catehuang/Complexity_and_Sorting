@@ -1,13 +1,13 @@
-package problemdomain;
+package problemDomain;
 
-public class OctangonalPrism extends Prism 
+public class OctagonalPrism extends Prism 
 {
-	public OctangonalPrism() 
+	public OctagonalPrism() 
 	{
 		super();
 	}
 	
-	public OctangonalPrism(double height, double side) 
+	public OctagonalPrism(double height, double side) 
 	{
 		super(height, side);
 	}

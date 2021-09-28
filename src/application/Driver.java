@@ -2,12 +2,14 @@ package application;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 import managers.SortManager;
 
 public class Driver {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
 		String fileName = "res/polyfor1.txt";
 		String comparedBy = "A";
 		String sortedBy = "Q";
