@@ -10,9 +10,9 @@ import managers.SortManager;
 public class Driver {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
-		String fileName = "res/polyfor1.txt";
-		String comparedBy = "A";
-		String sortedBy = "Q";
+		String fileName = "res/test.txt";
+		String comparedBy = "H";
+		String sortedBy = "I";
 		
 		/**
 		 * Check parameters are valid for all flags
@@ -47,11 +47,11 @@ public class Driver {
 		}
 		else if (!comparedBy.matches("(V|H|A)")) 
 		{
-			System.out.println("Invalid parameter. -T must be followed by one of the characters(v, h, or a)");
+			System.out.println("Invalid parameter: " +  comparedBy + ". -T must be followed by one of the characters(v, h, or a)");
 		} 
 		else if (!sortedBy.matches("(B|S|I|M|Q|Z)")) 
 		{
-			System.out.println("Invalid parameter. -S must be followed by one of the characters(b, s, i, m, q, or z)");
+			System.out.println("Invalid parameter: " +  sortedBy + ". -S must be followed by one of the characters(b, s, i, m, q, or z)");
 		} 
 		else
 		{

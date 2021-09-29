@@ -1,11 +1,11 @@
 package managers;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.*;
 import java.util.*;
 
 import problemDomain.*;
+import utilities.*;
 
 public class SortManager 
 {
@@ -20,10 +20,55 @@ public class SortManager
 		this.fileName = fileName;
 		this.comparedBy = comparedBy;
 		this.sortedBy = sortedBy;
+		Comparator comp;
 		
+		if (comparedBy == "V") {
+			comp = new VolumeCompare();
+		} 
+		else if (comparedBy == "H")
+		{
+			comp = new HeightCompare();
+		} 
+		else // (comparedBy == "A")
+		{
+			comp = new BaseAreaCompare();
+		}
+
 		loadData();
-		//compareByHeight();
 		
+		switch (sortedBy)
+		{
+			case "I":
+				System.out.println("Insertation sort by " + comparedBy);
+				SortingAlgorithms.insertionSort(arr, comp);
+				break;
+			case "S":
+				SortingAlgorithms.selectionSort(arr, comp);
+				break;
+			case "M":
+				SortingAlgorithms.mergeSort(arr, comp);
+				break;
+			case "Q":
+				SortingAlgorithms.quickSort(arr, comp);
+				break;
+			case "B":
+				SortingAlgorithms.bubbleSort(arr, comp);
+				break;
+			case "Z":
+				SortingAlgorithms.secreteSort(arr, comp);
+				break;
+			default:
+				System.out.println("Error. Cannot find the sorting: " + comparedBy);
+				System.exit(1);
+		}
+		printArray();
+	}
+
+	private void printArray() {
+		for(int i = 0; i < arr.length - 1; i++)
+		{
+			System.out.println(arr[i]);
+		}
 	}
 
 	private void loadData() throws ClassNotFoundException, NoSuchMethodException, SecurityException, IOException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException
@@ -53,20 +98,6 @@ public class SortManager
 			
 			// System.out.println(arr[i]);
 		}
-
 		in.close();
-		
-	}
-	
-	private void compareByHeight() 
-	{
-		/*
-		Arrays.sort(arr, Comparator.comparingDouble(o -> Double.parseDouble(o[1])));
-		
-		for (int i = 0; i < 100; i++) 
-		{ 
-			System.out.printf("%15s %10s %10s\n", arr[i][0], arr[i][1], arr[i][2]); 
-		}
-		*/
 	}
 }

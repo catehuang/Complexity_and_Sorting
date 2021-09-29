@@ -7,12 +7,17 @@ import problemDomain.Shape;
 public class VolumeCompare implements Comparator <Shape>
 {
 	@Override
-	public int compare(Shape o1, Shape o2) {
-		if (o1.calcVolume() > o2.calcVolume()) {
+	public int compare(Shape s1, Shape s2) 
+	{
+		if (s1.calcVolume() > s2.calcVolume()) {
 			return 1;
-		} else if (o1.calcVolume() < o2.calcVolume()) {
+		} 
+		else if (s1.calcVolume() < s2.calcVolume()) 
+		{
 			return -1;
-		} else {
+		} 
+		else 
+		{
 			return 0;
 		}
 	}
