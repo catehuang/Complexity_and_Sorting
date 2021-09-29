@@ -12,7 +12,7 @@ public class Driver {
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
 		String fileName = "res/test.txt";
 		String comparedBy = "H";
-		String sortedBy = "I";
+		String sortedBy = "S";
 		
 		/**
 		 * Check parameters are valid for all flags
