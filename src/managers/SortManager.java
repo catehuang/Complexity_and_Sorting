@@ -66,7 +66,7 @@ public class SortManager
 				System.out.println("Error. Cannot find the sorting: " + comparedBy);
 				System.exit(1);
 		}
-		//printArray();
+		printArray();
 	}
 
 	private void printArray() {
