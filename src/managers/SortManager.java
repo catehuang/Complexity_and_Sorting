@@ -25,13 +25,13 @@ public class SortManager
 		if (comparedBy == "V") {
 			comp = new VolumeCompare();
 		} 
-		else if (comparedBy == "H")
-		{
-			comp = new HeightCompare();
-		} 
-		else // (comparedBy == "A")
+		else if (comparedBy == "A")
 		{
 			comp = new BaseAreaCompare();
+		} 
+		else // (comparedBy == "H")
+		{
+			comp = new HeightCompare();
 		}
 
 		loadData();
@@ -43,25 +43,30 @@ public class SortManager
 				SortingAlgorithms.insertionSort(arr, comp);
 				break;
 			case "S":
+				System.out.println("Selection sort by " + comparedBy);
 				SortingAlgorithms.selectionSort(arr, comp);
 				break;
 			case "M":
+				System.out.println("Merge sort by " + comparedBy);
 				SortingAlgorithms.mergeSort(arr, comp);
 				break;
 			case "Q":
+				System.out.println("Quick sort by " + comparedBy);
 				SortingAlgorithms.quickSort(arr, comp);
 				break;
 			case "B":
+				System.out.println("Bubble sort by " + comparedBy);
 				SortingAlgorithms.bubbleSort(arr, comp);
 				break;
 			case "Z":
-				SortingAlgorithms.secreteSort(arr, comp);
+				System.out.println("Secret sort by " + comparedBy);
+				SortingAlgorithms.secretSort(arr, comp);
 				break;
 			default:
 				System.out.println("Error. Cannot find the sorting: " + comparedBy);
 				System.exit(1);
 		}
-		printArray();
+		//printArray();
 	}
 
 	private void printArray() {

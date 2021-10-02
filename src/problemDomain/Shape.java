@@ -28,11 +28,11 @@ public abstract class Shape implements Comparable <Shape>
 	@Override
 	public int compareTo(Shape s) 
 	{
-		if (this.height > s.height) 
+		if (this.height > s.getHeight()) 
 		{
 			return 1;
 		} 
-		else if (this.height > s.height) 
+		else if (this.height < s.getHeight()) 
 		{
 			return -1;
 		} 
