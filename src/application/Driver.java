@@ -11,8 +11,8 @@ public class Driver {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
 		String fileName = "res/test.txt";
-		String comparedBy = "H";
-		String sortedBy = "B";
+		String comparedBy = "A";
+		String sortedBy = "Q";
 		
 		/**
 		 * Check parameters are valid for all flags
@@ -55,8 +55,7 @@ public class Driver {
 		} 
 		else
 		{
-			//System.out.println("Pass");
-			//System.exit(0);
+			System.out.println("Starting sort...");
 			new SortManager(fileName, comparedBy, sortedBy);
 		}
 	}

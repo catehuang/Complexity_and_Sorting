@@ -14,6 +14,8 @@ public class SortManager
 	private String comparedBy;
 	private String sortedBy;
 	private Shape[] arr; 
+	private long startTime;
+	private long endTime;
 	
 	public SortManager(String fileName, String comparedBy, String sortedBy) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException 
 	{
@@ -39,34 +41,43 @@ public class SortManager
 		switch (sortedBy)
 		{
 			case "I":
-				System.out.println("Insertation sort by " + comparedBy);
+				startTime = System.currentTimeMillis();
 				SortingAlgorithms.insertionSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			case "S":
-				System.out.println("Selection sort by " + comparedBy);
+				startTime = System.currentTimeMillis();
 				SortingAlgorithms.selectionSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			case "M":
-				System.out.println("Merge sort by " + comparedBy);
+				startTime = System.currentTimeMillis();
 				SortingAlgorithms.mergeSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			case "Q":
-				System.out.println("Quick sort by " + comparedBy);
+				startTime = System.currentTimeMillis();
 				SortingAlgorithms.quickSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			case "B":
-				System.out.println("Bubble sort by " + comparedBy);
+				startTime = System.currentTimeMillis();
 				SortingAlgorithms.bubbleSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			case "Z":
-				System.out.println("Secret sort by " + comparedBy);
-				SortingAlgorithms.secretSort(arr, comp);
+				startTime = System.currentTimeMillis();
+				SortingAlgorithms.radixSort(arr, comp);
+				endTime = System.currentTimeMillis();
 				break;
 			default:
-				System.out.println("Error. Cannot find the sorting: " + comparedBy);
+				System.out.println("Error. Cannot find the method to sort!");
 				System.exit(1);
 		}
+		System.out.println("Done!");
 		printArray();
+		System.out.println();
+		System.out.println("Excution Time: " + (endTime - startTime) + " ms");
 	}
 
 	private void printArray() {
