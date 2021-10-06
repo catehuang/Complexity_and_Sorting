@@ -36,6 +36,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li> 
+   <li><a href="#analysis">complexity analysis</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -65,7 +66,7 @@ The following algorithms are used:
 3. Insertion sort
 4. Merge sort
 5. Quick sort
-6. Our own choice of sorting algorithm
+6. Our own choice of sorting algorithm (Radix Sort in our case)
 
 It also comes with a time-keeper so that we can see the running time of each algorithm. 
 
@@ -104,6 +105,12 @@ java -jar sort.jar –tH –Fpolyfor5.txt –sB
 where v is volume, h is height, a is base area, b is bubble, s is selection, i is insertion, m is merge, q is quick, and your choice of sorting algorithm is z.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- analysis -->
+## Complexity analysis
+
+
+
 
  
 <!-- LICENSE -->
