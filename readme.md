@@ -92,10 +92,15 @@ To get a local copy up and running follow these simple example steps.
  
 ## Usage
 
-File name F, the compare type and the sort type are provided as parameters (-f –t –s or -F –T –S) via command line. The program must be order and case insensitive. For example, all examples below are valid inputs:
+File name F, the compare type and the sort type are provided as parameters (-f –t –s or -F –T –S) via command line. 
+The program must be order and case insensitive. For example, all examples below are valid inputs:
+
 java -jar sort.jar –fpolyfor1.txt –Tv –Sb
+
 java -jar sort.jar –ta –sQ –fpolyfor3.txt
+
 java -jar sort.jar –tH –Fpolyfor5.txt –sB
+
 where v is volume, h is height, a is base area, b is bubble, s is selection, i is insertion, m is merge, q is quick, and your choice of sorting algorithm is z.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
