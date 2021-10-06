@@ -25,8 +25,6 @@ public class SquarePrism extends Prism
 	@Override
 	public String toString()
 	{
-		return "SquarePrism [height=" + getHeight() + ", side=" + getSide() + 
-				", calcBaseArea=" + String.format("%.2f", calcBaseArea()) + 
-				", calcVolume=" + String.format("%.2f", calcVolume()) + "]";
+		return String.format("%20s%10s%5.2s%10s%10.2f%10s%15.2f%15s%20.2f%3s", "SquarePrism", "[height=", getHeight(), ", side=", getSide(), ", calcBaseArea=", calcBaseArea(), ", calcVolume=", calcVolume(), "]");
 	}
 }

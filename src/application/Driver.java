@@ -10,8 +10,8 @@ import managers.SortManager;
 public class Driver {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
-		String fileName = "res/test.txt";
-		String comparedBy = "A";
+		String fileName = "res/polyfor1.txt";
+		String comparedBy = "H";
 		String sortedBy = "Q";
 		
 		/**

@@ -83,7 +83,11 @@ public class SortManager
 	private void printArray() {
 		for(int i = 0; i < arr.length; i++)
 		{
-			System.out.println(arr[i]);
+			if (i % 1000 == 1)
+			{
+				System.out.printf("%8d%3s", i, "th:");
+				System.out.println(arr[i]);
+			}
 		}
 	}
 
