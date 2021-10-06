@@ -123,8 +123,12 @@ where v is volume, h is height, a is base area, b is bubble, s is selection, i i
 <!-- Analysis -->
 ## Complexity analysis
 
+- Start with the least significant digit (the one’s position)
+- Gather the same values and put them together in a bucket
+- "Drain" the buckets in order
 
 
+For radix sort, it's time complexity is O(n) and space complexity is also O(n).
 
  
 <!-- LICENSE -->
