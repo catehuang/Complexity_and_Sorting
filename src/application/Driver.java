@@ -10,9 +10,9 @@ import managers.SortManager;
 public class Driver {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
-		String fileName = "res/polyfor1.txt";
+		String fileName = "res/test.txt";
 		String comparedBy = "H";
-		String sortedBy = "Q";
+		String sortedBy = "Z";
 		
 		/**
 		 * Check parameters are valid for all flags
