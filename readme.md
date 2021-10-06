@@ -36,7 +36,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li> 
-   <li><a href="#analysis">complexity analysis</a></li>
+   <li><a href="#analysis">Analysis</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -106,7 +106,7 @@ where v is volume, h is height, a is base area, b is bubble, s is selection, i i
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- analysis -->
+<!-- Analysis -->
 ## Complexity analysis
 
 
