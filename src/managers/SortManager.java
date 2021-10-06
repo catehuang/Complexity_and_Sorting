@@ -9,25 +9,19 @@ import utilities.*;
 
 public class SortManager 
 {
-
 	private String fileName;
-	private String comparedBy;
-	private String sortedBy;
 	private Shape[] arr; 
 	private long startTime;
 	private long endTime;
 	
 	public SortManager(String fileName, String comparedBy, String sortedBy) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException 
 	{
-		this.fileName = fileName;
-		this.comparedBy = comparedBy;
-		this.sortedBy = sortedBy;
 		Comparator comp;
-		
-		if (comparedBy == "V") {
+		this.fileName = fileName;
+		if (comparedBy.equals("V")) {
 			comp = new VolumeCompare();
 		} 
-		else if (comparedBy == "A")
+		else if (comparedBy.equals("A"))
 		{
 			comp = new BaseAreaCompare();
 		} 
