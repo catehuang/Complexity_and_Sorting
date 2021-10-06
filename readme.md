@@ -67,7 +67,7 @@ The following algorithms are used:
 5. Quick sort
 6. Our own choice of sorting algorithm
 
-It also comes with a recorder so that we can see the running time of each algorithm. 
+It also comes with a time-keeper so that we can see the running time of each algorithm. 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -92,9 +92,11 @@ To get a local copy up and running follow these simple example steps.
  
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+File name F, the compare type and the sort type are provided as parameters (-f –t –s or -F –T –S) via command line. The program must be order and case insensitive. For example, all examples below are valid inputs:
+java -jar sort.jar –fpolyfor1.txt –Tv –Sb
+java -jar sort.jar –ta –sQ –fpolyfor3.txt
+java -jar sort.jar –tH –Fpolyfor5.txt –sB
+where v is volume, h is height, a is base area, b is bubble, s is selection, i is insertion, m is merge, q is quick, and your choice of sorting algorithm is z.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
