@@ -50,7 +50,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li> 
-   <li><a href="#analysis">Complexity analysis</a></li>
+   <li><a href="#analysis">Complexity analysis (Radix sorting)</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -121,7 +121,7 @@ where v is volume, h is height, a is base area, b is bubble, s is selection, i i
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Analysis -->
-## Complexity analysis
+## Complexity analysis (Radix sorting)
 
 - Start with the least significant digit (the one’s position)
 - Gather the same values and put them together in a bucket
