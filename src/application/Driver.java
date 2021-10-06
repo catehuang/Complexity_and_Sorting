@@ -1,7 +1,6 @@
 package application;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
@@ -10,9 +9,14 @@ import managers.SortManager;
 public class Driver {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
-		String fileName = "res/test.txt";
-		String comparedBy = "H";
+		/* for test
+		String fileName = "res/polyfor1.txt";
+		String comparedBy = "V";
 		String sortedBy = "Z";
+		*/
+		String fileName = "";
+		String comparedBy = "";
+		String sortedBy = "";
 		
 		/**
 		 * Check parameters are valid for all flags
