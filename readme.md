@@ -34,7 +34,7 @@
 <h3 align="center">Complexity and Sorting</h3>
 
   <p align="center">
-    project_description
+    Sorting height, base area and volume using different sorting algorithms
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
