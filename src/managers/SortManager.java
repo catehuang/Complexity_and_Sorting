@@ -14,6 +14,11 @@ public class SortManager
 	private long startTime;
 	private long endTime;
 	
+		
+	/**
+	 * Sort the shapes with selected file, sorting method and comparison value. 
+	 * Print the appropriate shapes accordingly
+	 */
 	public SortManager(String fileName, String comparedBy, String sortedBy) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException 
 	{
 		Comparator comp;
@@ -73,7 +78,10 @@ public class SortManager
 		System.out.println();
 		System.out.println("Excution Time: " + (endTime - startTime) + " ms");
 	}
-
+	
+	/**
+	 * Print the sorted shapes the 1st one every thousand 
+	 */
 	private void printArray() {
 		for(int i = 0; i < arr.length; i++)
 		{
@@ -91,7 +99,11 @@ public class SortManager
 			*/
 		}
 	}
-
+	
+	/**
+	 * Read through the selected file 
+	 * and add the objects into object Shape array
+	 */
 	private void loadData() throws ClassNotFoundException, NoSuchMethodException, SecurityException, IOException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException
 	{
 		// when we know the type of input is and we can use scanner
