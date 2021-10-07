@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Cylinder and their
+* associated attributes and methods
+*/
 public class Cylinder extends Shape 
 {
 	private double radius;
