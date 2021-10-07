@@ -5,7 +5,12 @@ import java.util.Comparator;
 import problemDomain.Shape;
 
 public class BaseAreaCompare implements Comparator <Shape> 
-{
+{	
+	/**
+	 * @param s1 - shape object
+	 * @param s2 - another shape object
+	 * @return int to represent the result of area comparison
+	 */
 	@Override
 	public int compare(Shape s1, Shape s2) 
 	{
