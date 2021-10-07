@@ -9,7 +9,7 @@ public class BaseAreaCompare implements Comparator <Shape>
 	/**
 	 * @param s1 - shape object
 	 * @param s2 - another shape object
-	 * @return int to represent the result of area comparison
+	 * @return int to represent the result of area comparison: 1 for s1's area is greater than s2, -1 for s1's area is less than s2, 0 for two are equal.
 	 */
 	@Override
 	public int compare(Shape s1, Shape s2) 
