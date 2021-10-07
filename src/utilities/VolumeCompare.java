@@ -6,6 +6,11 @@ import problemDomain.Shape;
 
 public class VolumeCompare implements Comparator <Shape>
 {
+	/**
+	 * @param s1 - shape object
+	 * @param s2 - another shape object
+	 * @return int to represent the result of volume comparison
+	 */
 	@Override
 	public int compare(Shape s1, Shape s2) 
 	{
