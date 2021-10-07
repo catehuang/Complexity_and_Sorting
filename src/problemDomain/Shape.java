@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Shape and their
+* associated attributes and methods
+*/
 public abstract class Shape implements Comparable <Shape>
 {
 	private double height;

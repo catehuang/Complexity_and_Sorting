@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Octagonal Prism and their
+* associated attributes and methods
+*/
 public class OctagonalPrism extends Prism 
 {
 	public OctagonalPrism() 

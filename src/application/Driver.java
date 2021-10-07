@@ -7,7 +7,12 @@ import java.lang.reflect.InvocationTargetException;
 import managers.SortManager;
 
 public class Driver {
-
+				
+		/**
+		 * Take users command line and start sorting using the selected sorting method and source file 
+		 * provide notification when command line input is invalid
+		 * @param args users' command line input
+		 */
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
 
 		String fileName = "";

@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Pentagonal Prism and their
+* associated attributes and methods
+*/
 public class PentagonalPrism extends Prism
 {
 	

@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Triangular Prism and their
+* associated attributes and methods
+*/
 public class TriangularPrism extends Prism 
 {
 	public TriangularPrism() 

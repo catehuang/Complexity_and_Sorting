@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Prism and their
+* associated attributes and methods
+*/
 public abstract class Prism extends Shape 
 {
 	private double side;

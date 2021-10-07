@@ -1,5 +1,9 @@
 package problemDomain;
 
+/**
+* Class Description: This class represents a Cone and their
+* associated attributes and methods
+*/
 public class Cone extends Shape 
 {
 	private double radius;

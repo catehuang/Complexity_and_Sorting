@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Pyramid and their
+* associated attributes and methods
+*/
 public class Pyramid extends Shape
 {
 	private double side;
