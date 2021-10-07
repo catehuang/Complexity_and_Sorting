@@ -1,5 +1,8 @@
 package problemDomain;
-
+/**
+* Class Description: This class represents a Square Prism and their
+* associated attributes and methods
+*/
 public class SquarePrism extends Prism
 {
 	public SquarePrism() 
