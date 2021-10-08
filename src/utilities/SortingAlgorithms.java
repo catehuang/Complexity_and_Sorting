@@ -6,6 +6,11 @@ import problemDomain.Shape;
 
 public class SortingAlgorithms 
 {
+	/**
+	 * @param <T> generic type
+	 * @param arr the given array which is manipulated by insert sort
+	 * @param comp the way of comparing things
+	 */
 	public static <T> void insertionSort(Shape[] arr, Comparator<Shape> comp) 
 	{
 		// j is sorted last element, i is unsorted first element
@@ -24,6 +29,12 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the given array which is manipulated by swap
+	 * @param i an index of element which will be exchange for another index in the same array
+	 * @param j an index of element which will be exchange for another index in the same array
+	 */
 	private static <T> void swap(T[] arr, int i, int j) 
 	{
 		T tmp = arr[i];
@@ -31,6 +42,11 @@ public class SortingAlgorithms
 		arr[j] = tmp;
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the given array which is manipulated by selection sort
+	 * @param com the way of comparing things
+	 */
 	public static <T> void selectionSort(Shape[] arr, Comparator<Shape> com) 
 	{
 		// find minimum for each time and put into right (descending order)
@@ -49,12 +65,23 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the given array which is manipulated by merge sort
+	 * @param com the way of comparing things
+	 */
 	public static <T> void mergeSort(Shape[] arr, Comparator<Shape> com) 
 	{
 	
 		sort(arr, 0, arr.length - 1, com);
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param left the lowest index of the array
+	 * @param right the highest index of the array
+	 * @param com the way of comparing things
+	 */
 	private static void sort(Shape[] arr, int left, int right, Comparator<Shape> com) 
 	{
 		if (left < right)
@@ -67,6 +94,13 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param left the lowest index of the array
+	 * @param mid the middle index of the array
+	 * @param right the highest index of the array
+	 * @param com the way of comparing things
+	 */
 	private static void merge(Shape[] arr, int left, int mid, int right, Comparator<Shape> com) 
 	{
 		
@@ -121,11 +155,22 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the given array which is manipulated by quick sort
+	 * @param com the way of comparing things
+	 */
 	public static <T> void quickSort(Shape[] arr, Comparator<Shape> com) {
 		// use a pivot to compare the elements of two partitions
 		quick(arr, 0, arr.length - 1, com);
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param lowIndex the lowest index of the array
+	 * @param highIndex the highest index of the array
+	 * @param com the way of comparing things
+	 */
 	private static void quick(Shape[] arr, int lowIndex, int highIndex, Comparator<Shape> com) {
 		if (lowIndex < highIndex)
 		{
@@ -135,6 +180,13 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param lowIndex the lowest index of the array
+	 * @param highIndex the highest index of the array
+	 * @param com the way of comparing things
+	 * @return the index of element to split array into two partitions
+	 */
 	private static int partition(Shape[] arr, int lowIndex, int highIndex, Comparator<Shape> com) 
 	{
 		Shape pivot = arr[highIndex]; //choose the last element as the pivot
@@ -154,6 +206,11 @@ public class SortingAlgorithms
 		return i + 1;
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the manipulated array
+	 * @param com the way of comparing things
+	 */
 	public static <T> void bubbleSort(Shape[] arr, Comparator<Shape> com) {
 		// compare two items and put smaller one on the right side to make it presenting descending order
 		for (int i = 0; i < arr.length - 1; i++)
@@ -168,6 +225,11 @@ public class SortingAlgorithms
 		}
 	}
 
+	/**
+	 * @param <T> generic type
+	 * @param arr the manipulated array
+	 * @param com the way of comparing things
+	 */
 	public static <T> void radixSort(Shape[] arr, Comparator<Shape> com) {
 		// Radix sort
 		
@@ -204,6 +266,12 @@ public class SortingAlgorithms
 		sortBuckets(arr, com, total_digits, s);
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param com the way of comparing things
+	 * @param s the way of comparing things
+	 * @return the max number of digits
+	 */
 	private static int max_number_of_digits(Shape[] arr, Comparator<Shape> com, String s) {
 		// find the maximum value
 		Shape max = arr[0];
@@ -243,6 +311,12 @@ public class SortingAlgorithms
 		
 	}
 
+	/**
+	 * @param arr the manipulated array
+	 * @param com the way of comparing things
+	 * @param total_digits the total number of digits
+	 * @param s the way of comparing things
+	 */
 	private static void sortBuckets(Shape[] arr, Comparator<Shape> com, int total_digits, String s) {
 		int significant_digit; // significant digit
 		int index;		// store the index of array
