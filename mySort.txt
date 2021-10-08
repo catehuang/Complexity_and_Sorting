@@ -1,0 +1,17 @@
+Our choice of sorting algorithm is Radix Sort
+
+How does it work?
+1. First, we need to find the maximum value of the given array since we want to know where is the most significant digit in those numbers. 
+2. Then, we will know how many times of iteration this algorithm needed to go through. In other words, we will know how many digits we are going to deal with.
+3. Second, we put all numbers into ten buckets (the order is from 0 to 9) based on the least significant digit and following the original order. 
+4. Next, we collect all numbers from the bucket of digit 9 to the bucket of digit 0 and from the bottom of bucket to the top of bucket.
+5. We go through the step 3 and 4 and based on the second least significant digit.
+6. Same as step 5 but keep moving the considered digit from least significant digit to most significant digit one position for each time until reaching the most significant digit.
+
+Why did we choose this algorithm?
+We can see the values of volume are pretty big in this assignment. It might be easier to use Radix sort which is like more focusing on how many digits we dealing with.
+And the process of this algorithm is simple. It only consider a digit each iteration and collect numbers in the same way. 
+  
+What is the time complexity and space complexity?
+Based on the maximum value of our dealing numbers, the number of digits is the number of iterations the process needs to go through. 
+Therefore, generally the time complexity is O(n). Consider the space complexity, it will be O(n) because it only needs to store numbers for each iteration.
