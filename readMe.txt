@@ -23,7 +23,7 @@ Getting Started
 	This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
 Usage
-	File name F, the compare type and the sort type are provided as parameters (-f â€“t â€“s or -F â€“T â€“S) via command line. The program must be order and case insensitive. For example, all examples below are valid inputs:
+	File name F, the compare type and the sort type are provided as parameters ((-f –t –s or -F –T –S) via command line. The program must be order and case insensitive. For example, all examples below are valid inputs:
 		java -jar sort.jar –fpolyfor1.txt –Tv –Sb
 		java -jar sort.jar –ta –sQ –fpolyfor3.txt
 		java -jar sort.jar –tH –Fpolyfor5.txt –sB
@@ -35,3 +35,6 @@ Complexity analysis for our choice Radix sorting (you'll see more details in myS
 	Gather the same values and put them together in a bucket
 	"Drain" the buckets in order
 	For radix sort, it's time complexity is O(n) and space complexity is also O(n).
+
+Completeness of the assignment
+	All functions were completed and tested (100%). Also, we have completed all requirements.
