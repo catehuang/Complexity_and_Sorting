@@ -15,7 +15,7 @@ public class Driver {
 		 */
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException {
 
-		String fileName = "";
+		String fileName = "res/";
 		String comparedBy = "";
 		String sortedBy = "";
 		
@@ -31,7 +31,7 @@ public class Driver {
 			{
 				if (args[i].toUpperCase().startsWith("-F"))
 				{
-					fileName = args[i].toUpperCase().split("-F")[1];
+					fileName += args[i].toUpperCase().split("-F")[1];
 				} 
 				else if (args[i].toUpperCase().startsWith("-T")) 
 				{
