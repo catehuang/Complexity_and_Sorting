@@ -140,15 +140,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- CONTACT -->
-## Contact
-
-CPRG311-group 5 from SAIT
- 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
  
 
 <!-- MARKDOWN LINKS & IMAGES -->
